@@ -1,0 +1,133 @@
+<!-- <!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Card Example</title>
+    <style>
+        .card-container {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: space-around;
+        }
+
+        .card {
+            width: 300px;
+            border: 1px solid #ccc;
+            border-radius: 8px;
+            overflow: hidden;
+            margin: 20px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+        }
+
+        .card img {
+            width: 100%;
+            height: auto;
+        }
+
+        .card-content {
+            padding: 20px;
+        }
+
+        .card-title {
+            font-size: 18px;
+            font-weight: bold;
+            margin-bottom: 10px;
+        }
+
+        .card-description {
+            font-size: 14px;
+            color: #666;
+        }
+    </style>
+</head>
+<body>
+
+<div class="card-container">
+    <div class="card">
+        <img src="https://via.placeholder.com/300" alt="Card Image">
+        <div class="card-content">
+            <div class="card-title">Card 1 Title</div>
+            <div class="card-description">This is a simple card example with some content.</div>
+        </div>
+    </div>
+
+    <div class="card">
+        <img src="https://via.placeholder.com/300" alt="Card Image">
+        <div class="card-content">
+            <div class="card-title">Card 2 Title</div>
+            <div class="card-description">This is a simple card example with some content.</div>
+        </div>
+    </div>
+
+    <div class="card">
+        <img src="https://via.placeholder.com/300" alt="Card Image">
+        <div class="card-content">
+            <div class="card-title">Card 3 Title</div>
+            <div class="card-description">This is a simple card example with some content.</div>
+        </div>
+    </div>
+</div>
+
+<div class="card-container">
+    <div class="card">
+        <img src="https://via.placeholder.com/300" alt="Card Image">
+        <div class="card-content">
+            <div class="card-title">Card 4 Title</div>
+            <div class="card-description">This is a simple card example with some content.</div>
+        </div>
+    </div>
+
+    <div class="card">
+        <img src="https://via.placeholder.com/300" alt="Card Image">
+        <div class="card-content">
+            <div class="card-title">Card 5 Title</div>
+            <div class="card-description">This is a simple card example with some content.</div>
+        </div>
+    </div>
+
+    <div class="card">
+        <img src="https://via.placeholder.com/300" alt="Card Image">
+        <div class="card-content">
+            <div class="card-title">Card 6 Title</div>
+            <div class="card-description">This is a simple card example with some content.</div>
+        </div>
+    </div>
+</div>
+
+</body>
+</html> -->
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css" integrity="sha512-SfTiTlX6kk+qitfevl/7LibUOeJWlt9rbyDn92a1DqWOw9vWG2MFoays0sgObmWazO5BQPiFucnnEAjpAB+/Sw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <title>Document</title>
+</head>
+<body>
+        <h5>title</h5>
+        <h5>price</h5>
+        <div class="main">
+            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Nostrum natus molestias omnis, voluptatibus repudiandae,
+                <span class="read-more">
+                    necessitatibus facilis unde minima assumenda libero repellendus ratione distinctio blanditiis odio sequi praesentium, provident officiis modi. 
+                </span>
+            </p>
+            <span class="read-btn">Read More...</span>
+        </div>
+
+<script>
+   let read =  document.querySelector('.main');
+
+    read.addEventListener('click',getEvent=>{
+        let child = getEvent.target;
+        let isButton = child.className.includes('read-button');
+        if(!isButton) return;
+        let text = getEvent.target.parentNode.querySelector('.read-more')
+        text.classList.toggle('read-more--show')
+    })
+</script>
+    </body>
+</html>

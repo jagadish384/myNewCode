@@ -1,0 +1,111 @@
+/* .main{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.body{
+    background-color: red;
+   
+}
+.card{
+    text-align: center;
+}
+img{
+    width: 100px;
+    height: 100px;
+}
+.col-md-3{
+    width: 300px;
+    height: 200px;
+}*/
+
+/* .card-title{
+    width: 200px;
+} */
+
+
+body{
+    background-color: rgba(128, 128, 128, 0.178);
+}
+.card-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+}
+
+.card {
+    width: 300px;
+    border-radius: 20px 20px 10px 10px;
+    margin: 20px;
+    border: none;
+}
+button{
+    font-weight: bold;
+    width: 30px;
+    border-radius: 10px;
+}
+button:hover{
+    background-color: rgb(7, 241, 7);
+}
+img {
+    width: 300px;
+    height: 250px;
+    border-radius: 20px 20px 0px 0px;
+   
+}
+
+.card-content {
+    width: 300px;
+    padding: 20px;
+    
+}
+
+.card-title {
+}
+
+input{
+    width: 30px;
+    border-radius: 20px;
+    text-align: center;
+    font-weight: bold;
+}
+
+.increase{
+    margin-right: 150px;
+}
+h5{
+      
+   
+}
+
+.card-head{
+    display: flex;
+    justify-content: space-between;
+}
+
+/* .main{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+}
+.card{
+    text-align: center;
+   
+   
+}
+
+h5{
+    width: 200px;
+} 
+input{
+    width: 30px;
+}
+.increase{
+    margin-right: 150px;
+}
+
+.card-img-top{
+    padding: 10px;
+    height: 250px;
+} */
